@@ -1,5 +1,18 @@
 # DB II Guided Project
 
+## RECAP
+* create an actual database - structure, the columns, datatype, tables.. etc
+* ask yourself 4 quesions when designing schemas
+    * what field or columns does a table need/ what data are we storing in the ds
+    * whats the idenfitying key (primary key )
+    * are there any restrictions/ what type of data rae we storing
+    * are there restrictions for each column
+
+* created db3 file from scratch, writing out the raw sql, writing out in ddl command, executing it in table plus (MANUAL WAY) -> drawback (time, mistakes can be made easily, not reusable, no version control, changes to our schema are not reversible)
+* Introducing Database migrations, schema migrations
+* We learned how to configure knex - tell how to connect to the db file is
+* used seeds to fill in sample data
+
 Guided project **DB II** Module.
 
 ## Prerequisites

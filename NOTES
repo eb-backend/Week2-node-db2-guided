@@ -1,0 +1,41 @@
+RELATIONAL DATABASE
+-------
+we have to conform to the columns
+SQLite
+PostgresSQL
+MySQL
+Oracle
+
+
+NON RELATIONAL
+-------
+there's no column, there's blocks of DATABASE
+
+mongodDB
+DynamoDB
+Cassandra
+Redis
+
+
+
+-- INSERT INTO "fruits" ("name", "delicious", "color", "avgWeightOz")
+-- VALUES('strawberry', true, 'red', 0.42);
+INSERT INTO "fruits" ("name", "delicious","color", "avgWeightOz")
+VALUES('lemon',true,'red', 0.42);
+
+CREATE TABLE IF NOT EXISTS "fruits" (
+	"id" INTEGER NOT NULL UNIQUE PRIMARY KEY AUTOINCREMENT,--PRIMARY,UNIQUE, NOT NULLABLE, AUTOMATICALLY INCREMENT
+	"name" TEXT NOT NULL UNIQUE, --LIMIT CHAR VARCHAR(500) INSTEAD OF TEXT
+	"avgWeightOz" FLOAT NOT NULL,  --PREVENT THAT FROM BEING EMPTY
+	"delicious" BOOLEAN DEFAULT TRUE, 
+	"color" TEXT 
+	);
+
+ALTER TABLE "fruits"
+ADD COLUMN "tropical" BOOLEAN DEFAULT FALSE;
+
+ALTER TABLE "fruits"
+ADD COLUMN "price" INTEGER not NULL DEFAULT 0;
+
+DROP TABLE if EXISTS "fruits";
+
